@@ -1,0 +1,33 @@
+/* Apply CSS for better visual presentation of tables */
+
+ /* Control borders using border-collapse to merge borders into a single line */
+ table {
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+/* Add border and adjust spacing to control the space around the content */
+td, th {
+  border: 1px solid #ddd; /* Border color */
+  padding: 8px; /* Cell padding */
+}
+
+/* Apply zebra-striping with alternating background colors for even rows */
+tr:nth-child(even) {
+  background-color: #f2f2f2; 
+}
+
+/* Background color and text color for the row with headings */
+th{
+  background-color: #3033cc; 
+  color: white; 
+}
+/* Add additional styling for links within cells */
+a {
+    color: #0066cc; /* Link color */
+    text-decoration: none; /* Remove underlines from links */
+  }
+  
+  a:hover {
+    text-decoration: underline; /* Underline links on hover */
+  }
